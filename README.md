@@ -1,9 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 Arpit Chakraborty's Portfolio
 
-## Getting Started
+Welcome to my personal developer portfolio!  
+I'm Arpit Chakraborty — an AI/ML enthusiast and full-stack developer passionate about building intelligent systems that solve real-world problems.
 
-First, run the development server:
+> "Code with purpose. Build with impact."
 
+---
+
+## 🔍 About Me
+
+I'm currently pursuing B.E. in Computer Science from the University of Burdwan.  
+My work focuses on AI-powered solutions, web technologies, and scalable full-stack applications. Whether it's fine-tuning transformer models or building pixel-perfect UI with React, I love turning ideas into functional, impactful software.
+
+---
+
+## 🚀 What’s Inside
+
+- 🎨 **Responsive UI** – Built with React, Tailwind CSS, and a touch of retro flair  
+- 🤖 **AI/ML Projects** – Legal AI (NyaayVeer), Mental Health Chatbot, etc.  
+- ⚙️ **Technologies** – React, Python, Flask, Node.js, Transformers, Google Cloud  
+- 📈 **Experience Highlights** – Google Cloud, Palisadoes Foundation, Code Bird  
+- 📜 **Interactive Resume & Project Links**  
+- 🌐 **Live Site**: [arpit-chakraborty.vercel.app](https://arpit-chakraborty.vercel.app)
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React, TypeScript, Next.js, Tailwind CSS, React Native
+
+### Backend
+- Node.js, Flask, Python, Express, REST APIs
+
+### AI/ML
+- Hugging Face Transformers, PyTorch, NLP, XGBoost, Model Deployment
+
+### Tools
+- Git, Docker, Google Cloud, VS Code, Jupyter Notebook
+
+---
+
+## 🧩 Featured Projects
+
+### 🧠 NyaayVeer (SIH 2024)
+A Legal AI Assistant that analyzes FIRs and suggests relevant BNS sections with 98% accuracy.
+
+### 💬 Mental Health Chatbot
+An LLaMA-powered NLP chatbot trained on 5k+ therapy transcripts for stress/anxiety detection.
+
+### 🌐 Talawa (Open Source @ Palisadoes)
+Improved UI + testing infrastructure on a community management platform.
+
+---
+
+## 📦 How to Run This Project Locally
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/arpit-chakraborty/your-portfolio-repo.git
+cd your-portfolio-repo
+```
+
+2. **Install the dependencies**
+```bash
+npm install
+# or
+yarn
+# or
+pnpm install
+# or
+bun install
+```
+
+3. **Run the development server**
 ```bash
 npm run dev
 # or
@@ -14,23 +84,25 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. **Open in browser**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Navigate to: [http://localhost:3000](http://localhost:3000)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📤 Deployment
 
-To learn more about Next.js, take a look at the following resources:
+This portfolio is ready for **Vercel**, **Netlify**, or **any static hosting**.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 📦 Deploy with Vercel
+Just push your code to GitHub and import the repo into [vercel.com](https://vercel.com/).  
+It will auto-detect your framework and deploy on every commit!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📫 Let's Connect!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 📧 Email: arpit.chakraborty.03@gamil.com  
+- 🔗 [LinkedIn](https://www.linkedin.com/in/arpit-chakraborty/)  
+- 💻 [GitHub](https://github.com/arpit-chakraborty)  
+- 📹 [YouTube](https://www.youtube.com/@SpecsGuy)
