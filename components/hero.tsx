@@ -38,7 +38,7 @@ const stats = [
           style={{ animationDelay: "1s" }}
         />
         <div
-          className="absolute bottom-40 left-20 w-2 h-8 bg-green-400 animate-pulse"
+          className="absolute bottom-40 left-35 w-2 h-8 bg-green-400 animate-pulse"
           style={{ animationDelay: "2s" }}
         />
         <div
