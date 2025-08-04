@@ -17,16 +17,17 @@ export default function Contact({ config }: ContactProps) {
     email: "",
     message: "",
   })
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
 const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
-
+  
+  setIsSubmitting(true);
   const formPayload = {
     name: formData.name,
     email: formData.email,
     message: formData.message,
   };
-
   try {
     const n8n = await fetch("https://n8n-nightly-zw25.onrender.com/webhook/14170133-6f64-4ff8-8ee9-0114fe5fca38", {
       method: "POST",
@@ -45,6 +46,9 @@ const handleSubmit = async (e: React.FormEvent) => {
   } catch (error) {
     alert("Error sending message. Please try again.");
     console.error(error);
+  }
+  finally{
+    setIsSubmitting(false);
   }
 };
 
@@ -164,11 +168,17 @@ const handleSubmit = async (e: React.FormEvent) => {
               <Button
                 type="submit"
                 size="lg"
-                className="w-full bg-green-500 hover:bg-green-400 text-black border-0 shadow-lg shadow-green-500/25 font-mono font-bold"
+                disabled={isSubmitting}
+                className={`w-full font-mono font-bold border-0 shadow-lg transition-colors ${
+                  isSubmitting
+                    ? "bg-green-300 text-black cursor-not-allowed"
+                    : "bg-green-500 hover:bg-green-400 text-black shadow-green-500/25"
+                }`}
               >
                 <Send size={20} className="mr-2" />
-                Send Message
+                {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
+
             </form>
           </div>
         </div>
