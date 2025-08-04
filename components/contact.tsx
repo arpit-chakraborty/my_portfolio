@@ -18,32 +18,36 @@ export default function Contact({ config }: ContactProps) {
     message: "",
   })
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
 
-    try {
-      const response = await fetch("https://formspree.io/f/xyzpkbar", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          message: formData.message,
-        }),
-      })
+  const formPayload = {
+    name: formData.name,
+    email: formData.email,
+    message: formData.message,
+  };
 
-      if (response.ok) {
-        alert("Message sent successfully!")
-        setFormData({ name: "", email: "", message: "" }) // Clear form
-      } else {
-        alert("Failed to send message. Please try again.")
-      }
-    } catch (error) {
-      alert("Error sending message. Please try again.")
+  try {
+    const n8n = await fetch("https://n8n-nightly-zw25.onrender.com/webhook/14170133-6f64-4ff8-8ee9-0114fe5fca38", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formPayload),
+    });
+
+    if (n8n.ok) {
+      alert("Message sent successfully!");
+      setFormData({ name: "", email: "", message: "" });
+    } else {
+      alert("Failed to send message to n8n. Please try again.");
     }
+  } catch (error) {
+    alert("Error sending message. Please try again.");
+    console.error(error);
   }
+};
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
